@@ -1,0 +1,171 @@
+[
+  {
+    "_id": "d8ec983e-e5ef-4281-8702-131992ae0b23",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8080/api/register",
+    "url": "http://localhost:8080/api/register",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-02-15T11:06:07.417Z",
+    "modified": "2023-02-17T12:41:16.535Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": " {\n    \"username\" : \"youssef123\",\n    \"password\" : \"admin123\",\n    \"email\" : \"example@gmail.com\",\n    \"profile\": \"\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "02930c08-a6ba-49d8-93e6-eb953ccc388a",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8080/api/user/example123",
+    "url": "http://localhost:8080/api/user/example123",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-15T11:06:35.470Z",
+    "modified": "2023-02-15T11:35:31.075Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": " {\n    \"username\" : \"example123\",\n    \"password\" : \"admin123\",\n    \"email\" : \"example@gmail.com\",\n    \"profile\": \"\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "fbc77cb3-ea31-4178-b38a-bc6cafe31e24",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8080/api/login",
+    "url": "http://localhost:8080/api/login",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-02-15T11:07:03.290Z",
+    "modified": "2023-02-15T11:09:54.883Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": " {\n    \"username\" : \"example123\",\n    \"password\" : \"admin123\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "d2076b6e-d2e1-453c-8e9d-079e408c9460",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8080/api/updateuser?id=63ecbc9f3d92888dbf86fb60",
+    "url": "http://localhost:8080/api/updateuser?id=63ecbc9f3d92888dbf86fb60",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-02-15T11:07:35.548Z",
+    "modified": "2023-02-15T11:17:11.820Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "63ecbc9f3d92888dbf86fb60",
+        "isPath": false
+      }
+    ],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\" : \"youssef\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2VjYmYyNWRjNDczMmI5MzEwOGM1Y2IiLCJ1c2VybmFtZSI6ImV4YW1wbGUxMjMiLCJpYXQiOjE2NzY0NTk4MTUsImV4cCI6MTY3NjU0NjIxNX0.p5K4cg9rElN6sF6xl9AKH4u1hmu8Axsc1U-YTBWp6tU"
+    },
+    "tests": []
+  },
+  {
+    "_id": "ee4ba7ff-37d8-44fd-a56c-dc15706ba8a5",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8080/api/generateOTP?username=example123",
+    "url": "http://localhost:8080/api/generateOTP?username=example123",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-15T11:37:15.425Z",
+    "modified": "2023-02-15T11:37:15.425Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "username",
+        "value": "example123",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "62eb7743-e8ea-4368-ae79-ada78990c696",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8080/api/verifyOTP?username=example123&code=719998",
+    "url": "http://localhost:8080/api/verifyOTP?username=example123&code=911070",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-15T11:37:47.644Z",
+    "modified": "2023-02-15T12:33:01.559Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "username",
+        "value": "example123",
+        "isPath": false
+      },
+      {
+        "name": "code",
+        "value": "911070",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "60ceafee-ae4a-47ae-a6ad-640b3eed8cab",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8080/api/resetPassword",
+    "url": "http://localhost:8080/api/resetPassword",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-02-15T12:30:38.342Z",
+    "modified": "2023-02-15T12:30:38.342Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n   \"username\": \"example123\",\n  \"password\": \"youir\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "284d838a-67d4-4ea4-b2ab-d80fe96f4c4c",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8080/api/registerMail",
+    "url": "http://localhost:8080/api/registerMail",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-02-15T12:58:40.311Z",
+    "modified": "2023-02-15T13:05:48.373Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": " {\n    \"username\" : \"example123\",\n    \"userEmail\" : \"admin123@gmail.com\",\n    \"text\": \"Testing mail\",\n    \"subject\": \"Backend mail request\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
